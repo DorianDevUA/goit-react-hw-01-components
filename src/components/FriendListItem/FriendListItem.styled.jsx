@@ -9,7 +9,7 @@ export const Friend = styled.li`
   padding-top: ${({ theme }) => theme.spacing(2)};
   padding-left: ${({ theme }) => theme.spacing(3)};
   padding-bottom: ${({ theme }) => theme.spacing(2)};
-  box-shadow: 0 1px 3px ${({theme}) => theme.colors.black};
+  box-shadow: 0 1px 3px ${({ theme }) => theme.colors.black};
 `;
 
 export const Online = styled.span`

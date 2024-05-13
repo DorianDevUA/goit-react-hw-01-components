@@ -46,4 +46,4 @@ export const StatItem = styled.li`
 
 export const Percentage = styled.span`
   font-size: 20px;
-`
+`;

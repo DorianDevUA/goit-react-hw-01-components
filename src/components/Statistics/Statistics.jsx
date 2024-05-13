@@ -1,5 +1,11 @@
 import PropTypes from 'prop-types';
-import { Percentage, Section, StatItem, StatList, Title } from './Statistics.styled';
+import {
+  Percentage,
+  Section,
+  StatItem,
+  StatList,
+  Title,
+} from './Statistics.styled';
 
 export function Statistics({ title, stats }) {
   return (
