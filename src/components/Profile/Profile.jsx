@@ -1,4 +1,13 @@
 import PropTypes from 'prop-types';
+import {
+  Avatar,
+  Name,
+  ProfileCard,
+  StatCounter,
+  StatItem,
+  Stats,
+  UserInfo,
+} from './Profile.styled';
 
 export function Profile({
   username,
@@ -8,29 +17,29 @@ export function Profile({
   stats: { followers, views, likes },
 }) {
   return (
-    <div className="profile">
-      <div className="description">
-        <img src={avatar} alt={username} className="avatar" />
-        <p className="name">{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
-      </div>
+    <ProfileCard>
+      <UserInfo>
+        <Avatar src={avatar} alt={username} />
+        <Name>{username}</Name>
+        <p>@{tag}</p>
+        <p>{location}</p>
+      </UserInfo>
 
-      <ul className="stats">
-        <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{followers}</span>
-        </li>
-        <li>
-          <span className="label">Views</span>
-          <span className="quantity">{views}</span>
-        </li>
-        <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{likes}</span>
-        </li>
-      </ul>
-    </div>
+      <Stats>
+        <StatItem>
+          <span>Followers</span>
+          <StatCounter>{followers}</StatCounter>
+        </StatItem>
+        <StatItem>
+          <span>Views</span>
+          <StatCounter>{views}</StatCounter>
+        </StatItem>
+        <StatItem>
+          <span>Likes</span>
+          <StatCounter>{likes}</StatCounter>
+        </StatItem>
+      </Stats>
+    </ProfileCard>
   );
 }
 

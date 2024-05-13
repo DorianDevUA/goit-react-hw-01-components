@@ -9,6 +9,10 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  table {
+  border-collapse: collapse;
+  }
+
   ol,
   ul {
     list-style: none;
@@ -23,6 +27,6 @@ export const GlobalStyle = createGlobalStyle`
   body {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     color: ${({ theme }) => theme.colors.primayText};
-    background-color: ${({ theme }) => theme.colors.primaryBackground};
+    background-color: ${({ theme }) => theme.colors.grey};
   }
 `;
