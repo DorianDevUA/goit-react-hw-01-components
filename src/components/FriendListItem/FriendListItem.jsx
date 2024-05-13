@@ -5,7 +5,7 @@ export function FriendListItem({ avatar, name, isOnline }) {
   return (
     <Friend>
       <Online $isOnline={isOnline}></Online>
-      <img className="avatar" src={avatar} alt={name} width="48" />
+      <img src={avatar} alt={name} width="48" />
       <Name>{name}</Name>
     </Friend>
   );

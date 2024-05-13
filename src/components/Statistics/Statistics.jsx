@@ -16,7 +16,7 @@ export function Statistics({ title, stats }) {
         {stats.map(({ id, label, percentage }) => {
           return (
             <StatItem key={id} label={label}>
-              <span className="label">{label}</span>
+              <span>{label}</span>
               <Percentage>{percentage}%</Percentage>
             </StatItem>
           );

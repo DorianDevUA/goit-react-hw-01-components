@@ -4,7 +4,7 @@ import { TableHead } from './TransactionHistory.styled';
 
 export function TransactionHistory({ items }) {
   return (
-    <table className="transaction-history">
+    <table>
       <thead>
         <TableHead>
           <th>Type</th>
